@@ -2,14 +2,14 @@ from pathlib import Path
 
 def get_config():
     return {
-        "batch_size": 8,
-        "num_epochs": 20,
+        "batch_size": 24,
+        "num_epochs": 50,
         "lr": 10**-4,
         "seq_len": 350,
         "d_model": 512,
-        "datasource": 'opus_books',
+        "datasource": 'cfilt/iitb-english-hindi',
         "lang_src": "en",
-        "lang_tgt": "it",
+        "lang_tgt": "hi",
         "model_folder": "weights",
         "model_basename": "tmodel_",
         "preload": "latest",
